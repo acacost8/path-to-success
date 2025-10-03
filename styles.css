@@ -1,0 +1,189 @@
+/* CSS BY ADRIAN ACOSTA */
+/* IMPORTED FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap");
+
+/* CSS REST */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4ca7c0;
+  --purple: #484fb7;
+  --lavender: #6b8fe7;
+  --yellow: #e9bb57;
+  --pink: #d9536f;
+  --dark-gray: #1e1e1e;
+  --white: #ffffff;
+  --column: 430px;
+  --radius: 16px;
+  --gap: 16px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 08);
+
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--dark-gray);
+  background: var(--lavender);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--column);
+    background: var(--purple);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.website-header {
+    background: transparent;
+    color: var(--white);
+    text-align: center;
+    padding: 16px 0 0;
+    position: relative;
+}
+
+.website-header .container{
+    width: var(--column);
+    padding: 12px;
+    margin: 0 auto;
+}
+
+h1,h2 {
+  font-family: "Kavoon";
+}
+
+h1 {
+  font-size: 3em;
+}
+.tagline {
+  font-size: 1em;
+}
+
+.website-header h1 {
+    margin: 0;
+}
+
+.website-header .tagline {
+    margin: 6px 0 10px;
+    line-height: 1.2;
+}
+
+.website-header .container {
+    padding-bottom: 24px;
+}
+
+.main-navigation {
+    margin-top: 0;
+}
+
+.main-navigation {
+  background: var(--yellow);
+  width: var(--column);
+  margin: 0 auto;
+  padding: 12px;
+}
+.nav-label {
+  font-size: 1.5em;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  color: var(--dark-gray);
+  text-align: center;
+  margin: 0 0 8px;
+}
+.nav-list {
+  list-style: none;
+  padding: 0px;
+  display: grid;
+  gap: 10px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: var(--purple);
+  font-weight: 600;
+  display: block;
+  padding: 16px;
+  background: var(--white);
+  text-align: center;
+}
+
+section > header h2 {
+    font-size: 2em;
+    margin: 8px 0 12px;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.15em;
+}
+
+#content {
+    width: var(--column);
+    margin: 16px auto;
+    padding: 0 12px 24px;
+    background: transparent;
+}
+
+.service {
+    display: grid;
+    gap: var(--gap);
+}
+
+.service-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 12px;
+    margin: 8px 0;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 12px;
+    text-align: left;
+    box-shadow: var(--shadow);
+}
+
+.service-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 8px;
+    border-radius: 16px;
+    display: grid;
+    overflow: hidden;
+    background: transparent;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+}
