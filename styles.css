@@ -97,10 +97,6 @@ h1 {
 }
 
 .main-navigation {
-    margin-top: 0;
-}
-
-.main-navigation {
   background: var(--yellow);
   width: var(--column);
   margin: 0 auto;
@@ -133,12 +129,18 @@ h1 {
 
 section > header h2 {
     font-size: 2em;
-    margin: 8px 0 12px;
+    margin: 0;
     color: var(--white);
+}
+
+section > header {
+    margin: 8px 0 12px;
 }
 
 h3 {
     font-size: 1.5em;
+    margin: 4px 0 0;
+    color: var(--yellow);
 }
 
 h4 {
@@ -186,4 +188,140 @@ h4 {
     object-fit: cover;
     display: block;
     border-radius: 16px;
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr 1fr;
+    color: var(--dark-gray);
+}
+
+.reasons-list li {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 12px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.reasons-list h3 {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.service-block {
+    margin-bottom: var(--gap);
+}
+
+#why-us {
+    background: var(--pink);
+    padding: 24px 12px;
+    margin: 24px -12px;
+}
+
+#why-us > header h2 {
+    color: var(--white);
+    padding: 0 0 16px;
+}
+
+#why-us .reasons-list li:nth-child(1) { 
+    background: var(--teal); color: var(--dark-gray); 
+}
+#why-us .reasons-list li:nth-child(2) { 
+    background: var(--purple); color: var(--dark-gray); 
+}
+#why-us .reasons-list li:nth-child(3) { 
+    background: var(--yellow); color: var(--dark-gray); 
+}
+#why-us .reasons-list li:nth-child(4) { 
+    background: var(--white); color: var(--dark-gray); 
+}
+
+#why-us .reasons-list h3 {
+    color: inherit;
+}
+
+.service-block {
+    background: transparent;
+    padding: 0;
+}
+
+.service-block > h3 {
+    margin: 0 0 8px;
+    text-align: left;
+}
+
+#pricing .service-block .pricing-table{
+    width: 340px;
+    margin: 0 auto;
+    background: var(--yellow);
+    border: var(--radius);
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+
+#pricing .pricing-table thead th {
+    background: transparent;
+    color: var(--dark-gray);
+    font-weight: 700;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+#pricing .pricing-table thead th:last-child {
+    text-align: right;
+}
+
+#pricing .pricing-table tbody th,
+#pricing .pricing-table tbody td {
+    background: var(--white);
+    vertical-align: middle;
+    padding: 10px 12px;
+}
+
+#pricing .pricing-table tbody th {
+    width: 65%;
+    text-align: left;
+}
+
+#pricing .pricing-table tbody td {
+    width: 35%;
+    text-align: right;
+}
+
+#first-steps {
+    background: var(--pink);
+    color: var(--white);
+    text-align: left;
+    padding: 24px 12px;
+    margin: 24px -12px 0;
+}
+
+#first-steps .btn {
+    background: var(--white);
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 24px;
+    display: block;;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border-radius: var(--radius);
+    padding: 16px 32px;
+}
+
+.website-footer {
+    color: var(--white);
+    text-align: center;
+    padding: 16px 12px;
+}
+
+.website-footer a {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: 600;
 }
